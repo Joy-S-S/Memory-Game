@@ -14,9 +14,10 @@ body {
   background-color: #444851; /* Darker background for the container */
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  width: 450px;
+  width: 80%; /* Slightly smaller width */
+  max-width: 450px; /* Limit maximum width */
   position: relative;
-  max-width: 100%; /* Makes the container responsive */
+  margin: 0 auto; /* Center the game container */
 }
 
 h1 {
@@ -131,8 +132,7 @@ button:active {
 /* For tablet and small screens (up to 768px) */
 @media (max-width: 768px) {
   .game-container {
-    width: 90%;
-    padding: 15px;
+    width: 85%; /* Slightly smaller for tablets */
   }
 
   h1 {
@@ -164,7 +164,7 @@ button:active {
 /* For small screens and mobile devices (up to 480px) */
 @media (max-width: 480px) {
   .game-container {
-    width: 100%;
+    width: 90%; /* Smaller for mobile screens */
     padding: 10px;
   }
 
